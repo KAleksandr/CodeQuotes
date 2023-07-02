@@ -42,7 +42,7 @@ public partial class MainPage : ContentPage
             new Point(0, 0),
             new Point(1, 1));
         background.Background = gradient;
-        int index = random.Next(0, quotes.Count-1);
+        int index = random.Next( quotes.Count-1);
         lblquotes.Text = quotes[index];
     }
     async Task LoadMauiAsset()
